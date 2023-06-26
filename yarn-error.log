@@ -1,0 +1,66 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\sevda\OneDrive\Masaüstü\UstechMarket\node_modules\.bin;C:\Users\sevda\OneDrive\Masaüstü\node_modules\.bin;C:\Users\sevda\OneDrive\node_modules\.bin;C:\Users\sevda\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\sevda\AppData\Roaming\nvm\v16.14.0\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\sevda\AppData\Local\Microsoft\WindowsApps;C:\Users\sevda\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sevda\AppData\Local\GitHubDesktop\bin;C:\Users\sevda\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\sevda\AppData\Roaming\npm;C:\Users\sevda\AppData\Local\npm-cache\_npx\8d2f9c029655e602\node_modules\.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\sevda\AppData\Roaming\nvm\v16.14.0\node_modules\yarn\lib\cli.js:141517:19)
+      at Object.onceWrapper (node:events:639:28)
+      at ClientRequest.emit (node:events:520:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:758:9)
+      at Object.onceWrapper (node:events:639:28)
+      at TLSSocket.emit (node:events:532:35)
+      at TLSSocket.Socket._onTimeout (node:net:501:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+    "name": "ustechmarket",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "export": "next export",
+      "deploy": "next build && next export && npx thirdweb@latest upload out"
+    },
+    "dependencies": {
+      "@thirdweb-dev/chains": "^0.1.18",
+      "@thirdweb-dev/react": "^3.12.2",
+      "@thirdweb-dev/sdk": "^3.10.17",
+      "ethers": "^5.7.2",
+      "next": "^13",
+      "nextjs-progressbar": "^0.0.16",
+      "react": "^18.2",
+      "react-dom": "^18.2",
+      "react-hook-form": "^7.43.0",
+      "react-hot-toast": "^2.4.0"
+    },
+    "devDependencies": {
+      "@types/node": "^18.11.11",
+      "@types/react": "^18",
+      "eslint": "^8.29.0",
+      "eslint-config-next": "^13",
+      "typescript": "^4.9.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
